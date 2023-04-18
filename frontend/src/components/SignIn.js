@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { FooterWrapper, LinkStyled } from "../styles/FooterStyle.js";
 
+// Sign in //
 const SignIn = () => {
   const LinkHomeStyled = styled(Link)`
     text-decoration: none;
