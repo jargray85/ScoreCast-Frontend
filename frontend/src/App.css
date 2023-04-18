@@ -1,0 +1,446 @@
+
+/*==================================================*/
+body {
+  background-image: url('/src/images/ryan-OywyPkrDEvg-unsplash.jpg');
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+
+
+/*==================================================*/
+/*Home.js Style*/
+/*==================================================*/
+.parent-container {
+ 
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 50px;
+  margin: 80px 0 20px 0;
+  color: white; 
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+  border: 3px solid rgb(7, 7, 7);
+  padding: 20px 160px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+
+  
+}
+
+
+
+
+
+.subtitle {
+  font-size: 50px;
+  margin-bottom: 0 auto;
+  justify-content: center;
+  color: white; 
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: .5px;
+}
+
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  color: black;
+}
+
+.event-container:link {
+  color: black;
+}
+
+.event-card {
+  justify-content: center;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 15px;
+  width: auto;
+  flex-wrap: wrap;
+  text-shadow: 1px 1px 1px black;
+  text-decoration: none;
+  color: black;
+
+}
+
+.event-card:link {
+  color: black;
+}
+
+.tournament-name {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.tournament-logo{
+  padding: 15px;
+}
+
+.event-details {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(169, 194, 213);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  color: black;
+  
+}
+
+.event-game{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 10px
+}
+
+.details-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+.event-details:hover {
+  transform: scale(0.9);
+  transition: transform 0.3s ease-in-out;
+}
+
+.currentStage{
+
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 10px;
+  color: black;
+  text-shadow: 1px 1px 1px black;
+}
+.team-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-details h3 {
+  margin: 0px 5px;
+}
+
+.team-logo{
+
+  padding: 15px;
+}
+
+
+.team-name {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0 2px;
+}
+
+.score-details {
+  align-items: center;
+  display: flex;
+  margin: 0px 5px;
+}
+
+.score-details h3 {
+  font-size: 30px;
+  margin: 0 10px;
+}
+
+.status {
+  margin-top: 10px;
+}
+
+.stage{
+  display: flex;
+  flex-wrap: wrap;
+}
+/*==================================================*/
+/* Show.js Style */
+/*==================================================*/
+/* Table Style */
+.parent-container-show {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.events-container-show{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  /* font-size: 50px; */
+}
+
+.event-details-show{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgba(191, 139, 139, 0.1);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  color: rgb(253, 251, 251);
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: .5px;
+  /* font-size: 50px; */
+  text-decoration: bold;
+
+}
+
+table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  text-decoration: bold;
+}
+
+th {
+  background-color: #080808;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+  border: 1px solid black;
+  text-decoration: bold;
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+  border: 4px solid black;
+  color: white;
+  background-color: rgba(0,0,0,0.2); 
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: .5px;
+  text-decoration: bold;
+  
+
+}
+
+/*==================================================*/
+/* TeamNavBar.js Style */
+/*==================================================*/
+
+.nav-bar-team{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 2rem;
+  background: lightblue;
+  color: white;
+  height: 5rem;
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+  border: red;
+
+}
+
+
+
+/*==================================================*/
+/* Team.js Style */
+/*==================================================*/
+.parent-container-team {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: red;
+}
+
+.team-info{
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: red;
+}
+
+.second-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  border: red;
+}
+
+.column-left{
+  display: flex;
+  width: 50%;
+  border: red;
+}
+
+.column-right{
+  display: flex;
+  width: 50%;
+  border: red;
+}
+
+/*==================================================*/
+/* TeamPreviousGame.js Style */
+/*==================================================*/
+
+.event-game {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin: 20px;
+  border: red;
+}
+
+.allCompetitionTitle{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  border: red;}
+
+.column-game{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: red;
+}
+
+.competition{
+  display: grid;
+  grid-template-areas: none;
+  width: 80%;
+  border: red;
+}
+
+.image-team-game{
+  margin-top: auto;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: red;
+
+}
+
+.allCompetitions{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  border: red;
+}
+
+
+/*==================================================*/
+/* TeamSquad.js Style */
+/*==================================================*/
+.squadTitle{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  border: red;
+}
+
+.squad{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  border: red;
+}
+
+.positions{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  border: red;
+}
+.namePosition{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  border: red;
+}
+
+.cardAllPlayer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  border: red;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 25%;
+  margin: 10px;
+}
+
+.card-body{
+  color: white;
+  background-color: blue;
+  border-radius: 10px;
+  margin: 10%;
+  padding: 10px;
+}
+
