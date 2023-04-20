@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import backgroundImage from "../images/ryan-OywyPkrDEvg-unsplash.jpg";
-// import myFont from '/fonts/BebasNeue-Regular.ttf';
+import myFont from "../fonts/BebasNeue-Regular.ttf";
 
 const MainTitle = styled.h1`
   @font-face {
     font-family: 'sport';
-    // src: url('') format('truetype');
+    src: url('${myFont}') format('truetype');
   }
   font-family: sport;
   font-size: 6rem;
@@ -47,11 +47,10 @@ const SoccerLink = styled(Link)`
   font-size: 50px;
   background-color: rgba(0,0,0,0.5); 
   @font-face {
-    font-family: 'sportsb1';
-    src: url('/fonts/Jersey M54.ttf') 
+    font-family: 'sport';
+    src: url('${myFont}') format('truetype');
   }
-  font-family: 'sportsb1';
-  
+  font-family: sport;
   &:hover {
     transform: scale(0.9);
     transition: transform 0.3s ease-in-out;
@@ -75,7 +74,11 @@ const BasketballLink = styled(Link)`
   margin-left: 130px;
   font-size: 50px;
   background-color: rgba(0,0,0,0.5); 
-
+  @font-face {
+    font-family: 'sport';
+    src: url('${myFont}') format('truetype');
+  }
+  font-family: sport;
   &:hover {
     transform: scale(0.9);
     transition: transform 0.3s ease-in-out;
