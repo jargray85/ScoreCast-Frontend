@@ -71,7 +71,7 @@ const ShowSoccer = () => {
                   alt={gameToDisplay?.HOME_NAME}
                 />
                 <h3 className="team-name">{gameToDisplay?.HOME_NAME}</h3>
-                <Link to={`/team/${gameToDisplay?.HOME_PARTICIPANT_IDS[0]}`}>More Info</Link>
+                <Link to={`/team/${gameToDisplay?.HOME_PARTICIPANT_IDS[0]}/games`}>Previous Games</Link>
               </div>
               <div className="score-details">
                 <h3>{gameToDisplay?.HOME_SCORE_CURRENT}</h3>
@@ -86,7 +86,7 @@ const ShowSoccer = () => {
                 />
                 <h3 className="team-name">
                   {gameToDisplay?.AWAY_PARTICIPANT_NAME_ONE} </h3>
-                  <Link to={`/team/${gameToDisplay?.AWAY_PARTICIPANT_IDS[0]}`}>More Info</Link>
+                  <Link to={`/team/${gameToDisplay?.AWAY_PARTICIPANT_IDS[0]}/games`}>Previous Games</Link>
                
               </div>
               <h3 className="status">{gameToDisplay?.EVENT_STATUS}</h3>

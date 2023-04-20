@@ -18,10 +18,10 @@ const TeamNavBar = () => {
     `;
 
   return (
-    <div className="nav-bar-team">
-    <LinkStyledTeamNavBar to={`/team/${id}`}>Team</LinkStyledTeamNavBar>
-    <LinkStyledTeamNavBar to={`/team/${id}/squad`}>Squad</LinkStyledTeamNavBar>
-    <LinkStyledTeamNavBar to={`/team/${id}/games`}>Games</LinkStyledTeamNavBar>
+    <div className="nav-bar-team1">
+    {/* <LinkStyledTeamNavBar to={`/team/${id}`}>Team</LinkStyledTeamNavBar>
+    <LinkStyledTeamNavBar to={`/team/${id}/squad`}>Squad</LinkStyledTeamNavBar> */}
+    {/* <LinkStyledTeamNavBar to={`/team/${id}/games`}>Previous Games</LinkStyledTeamNavBar> */}
   </div>
   )
 }
