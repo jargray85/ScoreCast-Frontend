@@ -460,7 +460,7 @@ td {
 
 .register-container h1 {
   text-align: center;
-  font-family: 'BebasNeue', cursive;
+  font-family: 'BebasNeue';
   font-size: 4em;
 }
 
@@ -469,13 +469,13 @@ td {
 }
 
 .register-container .username {
-  font-family: 'BebasNeue', cursive;
+  font-family: 'BebasNeue';
   font-size: 2em;
   margin-bottom: 1em;
 }
 
 .register-container .password {
-  font-family: 'BebasNeue', cursive;
+  font-family: 'BebasNeue';
   font-size: 2em;
   margin-top: 2em;
 }
@@ -501,7 +501,7 @@ td {
 
 .signin-container h1 {
   text-align: center;
-  font-family: 'BebasNeue', cursive;
+  font-family: 'BebasNeue';
   font-size: 4em;
 }
 
@@ -510,7 +510,7 @@ td {
 }
 
 .signin-container label {
-  font-family: 'BebasNeue', cursive;
+  font-family: 'BebasNeue';
   font-size: 2em;
   margin-top: 2em;
 }
