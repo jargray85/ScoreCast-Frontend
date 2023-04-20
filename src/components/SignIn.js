@@ -11,15 +11,16 @@ const SignIn = () => {
   `;
 
   return (
-    <div className="register-container">
+    <div className="signin-container">
       <h1>Sign-In</h1>
       <form>
-        <label>Username:</label>
-        <input type="text" name="username" placeholder="username" />
-        <label for="password">Password:</label>
-        <input type="password" name="password" placeholder="password" />
+        <label>Username:</label> <br></br>
+        <input type="text" name="username" placeholder="username" /> <br></br>
+        <label for="password">Password:</label> <br></br>
+        <input type="password" name="password" placeholder="password" /> <br></br>
+        <button>Sign-In</button>
       </form>
-      <button>Sign-In</button>; 
+ 
     </div>
   );
 };

@@ -39,8 +39,12 @@ const Header = () => {
         </SearchContainer>
 
         <ButtonsContainer>
-          <Button>Sign In</Button>
-          <Button>Sign Up</Button>
+          <Link to='/signin'>
+            <Button>Sign In</Button>
+          </Link>
+          <Link to='/register'>
+            <Button>Sign Up</Button>
+          </Link>
         </ButtonsContainer>
       </Nav>
     </HeaderWrapper>

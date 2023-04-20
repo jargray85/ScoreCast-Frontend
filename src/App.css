@@ -1,7 +1,9 @@
+/* "GRADUATE" font */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Graduate&family=Rampart+One&display=swap');
 
 /*==================================================*/
 body {
-  background-image: url('/src/images/ryan-OywyPkrDEvg-unsplash.jpg');
+  background-image: url('/src/images/wp8649250.png');
   background-repeat: no-repeat;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -444,3 +446,78 @@ td {
   padding: 10px;
 }
 
+/*==================================================*/
+/* Register.js */
+/*==================================================*/
+.register-container {
+  margin-top: 5em;
+  color: white;
+}
+
+.register-container h1 {
+  text-align: center;
+  font-family: 'Graduate', cursive;
+  font-size: 4em;
+}
+
+.register-container form {
+  text-align: center;
+}
+
+.register-container .username {
+  font-family: 'Graduate', cursive;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.register-container .password {
+  font-family: 'Graduate', cursive;
+  font-size: 2em;
+  margin-top: 2em;
+}
+
+.register-container .submit {
+  margin-top: 1.5em;
+  height: 3em;
+  width: 8em;
+}
+
+.register-container input {
+  height: 2.5em;
+  width: 15em;
+}
+
+/*==================================================*/
+/* SignIn.js */
+/*==================================================*/
+.signin-container {
+  margin-top: 5em;
+  color: white;
+}
+
+.signin-container h1 {
+  text-align: center;
+  font-family: 'Graduate', cursive;
+  font-size: 4em;
+}
+
+.signin-container form {
+  text-align: center;
+}
+
+.signin-container label {
+  font-family: 'Graduate', cursive;
+  font-size: 2em;
+  margin-top: 2em;
+}
+
+.signin-container button {
+  margin-top: 1.5em;
+  height: 3em;
+  width: 8em;
+}
+
+.signin-container input {
+  height: 2.5em;
+  width: 15em;
+}
