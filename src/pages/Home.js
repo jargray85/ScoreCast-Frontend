@@ -9,12 +9,12 @@ const MainTitle = styled.h1`
     src: url('${myFont}') format('truetype');
   }
   font-family: sport;
-  font-size: 6rem;
+  font-size: 10rem;
   font-weight: 700;
-  margin-bottom: 1;
+  margin-top: .01em;
   color: white;
   text-shadow: 5px 5px 5px black;
-  letter-spacing: .5px;
+  letter-spacing: 5px;
   `;
 
 const MainDiv = styled.div`
