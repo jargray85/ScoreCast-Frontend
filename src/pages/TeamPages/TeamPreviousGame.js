@@ -42,7 +42,7 @@ const TeamPreviousGame = () => {
 
   return (
     <div className="allCompetitions">
-    <h2 className="allCompetitionTitle">All Competitions and Current Results:</h2>
+    <h2 className="allCompetitionTitle">All Competitions and Current Results</h2>
     <TeamNavBar/>
     {resultData &&
       resultData.map((team, index) => (
@@ -52,7 +52,7 @@ const TeamPreviousGame = () => {
             team.EVENTS.map((event, eventIndex) => (
               <div className="event-game" key={eventIndex}>
                 <div className="column-game">
-                  {" "}
+                  {""}
                   <img
                     className="image-team-game"
                     src={event.HOME_IMAGES}
@@ -70,7 +70,7 @@ const TeamPreviousGame = () => {
                   {event.AWAY_PARTICIPANT_NAME_ONE}
                 </div>
                 <div className="column-game">
-                  result: {event.HOME_SCORE_CURRENT} -{" "}
+                  result: {event.HOME_SCORE_CURRENT} - {""}
                   {event.AWAY_SCORE_CURRENT}
                 </div>
               </div>

@@ -70,7 +70,7 @@ const ShowBasketball = () => {
             <div className="details-row">
             <div className="team-details">
               <h3 className="team-name">{gameToDisplay?.HOME_NAME}</h3>
-              <Link to={`/team/${gameToDisplay?.HOME_PARTICIPANT_IDS[0]}/games`}>Previous Games</Link>
+              <Link className="previousGames" to={`/team/${gameToDisplay?.HOME_PARTICIPANT_IDS[0]}/games`}>Previous Games</Link>
               <img
                 className="team-logo"
                 src={gameToDisplay?.HOME_IMAGES}
@@ -91,7 +91,7 @@ const ShowBasketball = () => {
               <h3 className="team-name">
                 {gameToDisplay?.AWAY_PARTICIPANT_NAME_ONE}
               </h3>
-              <Link to={`/team/${gameToDisplay?.AWAY_PARTICIPANT_IDS[0]}/games`}>Previous Games</Link>
+              <Link className="previousGames" to={`/team/${gameToDisplay?.AWAY_PARTICIPANT_IDS[0]}/games`}>Previous Games</Link>
             </div>
             <h3 className="status">{gameToDisplay?.EVENT_STATUS}</h3>
           </div>
