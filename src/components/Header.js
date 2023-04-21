@@ -43,7 +43,7 @@ const Header = () => {
             <Button>Sign In</Button>
           </Link>
           <Link to='/register'>
-            <Button>Sign Up</Button>
+            <Button>Register</Button>
           </Link>
         </ButtonsContainer>
       </Nav>
