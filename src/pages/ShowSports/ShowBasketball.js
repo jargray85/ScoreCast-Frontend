@@ -69,13 +69,16 @@ const ShowBasketball = () => {
             </div>
             <div className="details-row">
             <div className="team-details">
-              <h3 className="team-name">{gameToDisplay?.HOME_NAME}</h3>
-              <Link className="previousGames" to={`/team/${gameToDisplay?.HOME_PARTICIPANT_IDS[0]}/games`}>Previous Games</Link>
-              <img
-                className="team-logo"
-                src={gameToDisplay?.HOME_IMAGES}
-                alt={gameToDisplay?.HOME_NAME}
-              />
+              <div className="currentGame">
+                <img
+                  className="team-logo"
+                  src={gameToDisplay?.HOME_IMAGES}
+                  alt={gameToDisplay?.HOME_NAME}
+                />
+                <h3 className="team-name">{gameToDisplay?.HOME_NAME}</h3>
+                <Link className="previousGames" to={`/team/${gameToDisplay?.HOME_PARTICIPANT_IDS[0]}/games`}>Previous Games</Link>
+              </div>
+              
             </div>
             <div className="score-details">
               <h3>{gameToDisplay?.HOME_SCORE_CURRENT}</h3>
@@ -83,15 +86,17 @@ const ShowBasketball = () => {
               <h3>{gameToDisplay?.AWAY_SCORE_CURRENT}</h3>
             </div>
             <div className="team-details">
-              <img
-                className="team-logo"
-                src={gameToDisplay?.AWAY_IMAGES}
-                alt={gameToDisplay?.AWAY_PARTICIPANT_NAME_ONE}
-              />
-              <h3 className="team-name">
-                {gameToDisplay?.AWAY_PARTICIPANT_NAME_ONE}
-              </h3>
-              <Link className="previousGames" to={`/team/${gameToDisplay?.AWAY_PARTICIPANT_IDS[0]}/games`}>Previous Games</Link>
+              <div className="currentGame">
+                <img
+                  className="team-logo"
+                  src={gameToDisplay?.AWAY_IMAGES}
+                  alt={gameToDisplay?.AWAY_PARTICIPANT_NAME_ONE}
+                />
+                <h3 className="team-name">
+                  {gameToDisplay?.AWAY_PARTICIPANT_NAME_ONE}
+                </h3>
+                <Link className="previousGames" to={`/team/${gameToDisplay?.AWAY_PARTICIPANT_IDS[0]}/games`}>Previous Games</Link>
+              </div>
             </div>
             <h3 className="status">{gameToDisplay?.EVENT_STATUS}</h3>
           </div>

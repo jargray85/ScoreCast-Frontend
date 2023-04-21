@@ -148,7 +148,7 @@ body {
 }
 .team-details {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -271,11 +271,30 @@ td {
 }
 
 .previousGames {
-  color: gray;
+  color: gray;  
+}
+
+.previousGames:hover  {
+  opacity: 0.8;
+  transform: scale(0.9);
+  transition: transform 0.3s ease-in-out;
 }
 
 .previousGames:visited {
   color: gray;
+}
+
+.currentGame {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-name {
+  font-size: 1.5em;
+}
+
+.score-details h3 {
+  font-size: 3em;
 }
 
 /*==================================================*/

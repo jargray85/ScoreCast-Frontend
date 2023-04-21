@@ -92,10 +92,10 @@ function HomeBasketball() {
                   <div className="details-row">
                     <div className="team-details">
                       <img
-                        className="team-logo"
-                        src={event.HOME_IMAGES}
-                        alt={event.HOME_NAME}
-                      />
+                          className="team-logo"
+                          src={event.HOME_IMAGES}
+                          alt={event.HOME_NAME}
+                        />
                       <h3 className="team-name">{event.HOME_NAME}</h3>
                     </div>
                     <div className="score-details">

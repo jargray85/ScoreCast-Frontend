@@ -85,12 +85,12 @@ function HomeSoccer() {
                     </div>
                     <div className="details-row">
                     <div className="team-details">
-                        <h3 className="team-name">{event.HOME_NAME}</h3>
                         <img
                           className="team-logo"
                           src={event.HOME_IMAGES}
                           alt={event.HOME_NAME}
                         />
+                        <h3 className="team-name">{event.HOME_NAME}</h3>
                       </div>
                       <div className="score-details">
                         <h3>{event.HOME_SCORE_CURRENT}</h3>
