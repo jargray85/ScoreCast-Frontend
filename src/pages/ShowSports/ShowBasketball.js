@@ -58,7 +58,7 @@ const ShowBasketball = () => {
   return (
     <div>
       <div className="parent-container-show">
-        <h1 className="title">Game:</h1>
+        <h1 className="title">Game</h1>
         <br />
         <div className="events-container-show">
           <div className="event-details-show">

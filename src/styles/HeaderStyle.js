@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import myFont from "../fonts/BebasNeue-Regular.ttf";
+
 
 export const HeaderWrapper = styled.div`
   display: grid;
@@ -56,12 +58,9 @@ export const Nav = styled.nav`
   // opacity: 0.3;
   text-shadow: 1px 1px 2px black;
   @font-face {
-    font-family: 'sportsb';
-    src: url('./frontend/src/fonts/AmericanCaptain.ttf')
-  };
-  font-family: sportsb;
-  
-
+    font-family: 'sport';
+    src: url('${myFont}') format('truetype');
+  }
 `;
 //create a link using styled components
 export const LinkStyled = styled(Link)`

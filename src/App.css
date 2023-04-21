@@ -49,16 +49,13 @@ body {
 }
 
 
-
-
-
 .subtitle {
   font-size: 50px;
   margin-bottom: 0 auto;
   justify-content: center;
   color: white; 
   text-shadow: 1px 1px 2px black;
-  letter-spacing: .5px;
+  letter-spacing: .0px;
 }
 
 
@@ -67,7 +64,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .event-container:link {
@@ -85,12 +82,12 @@ body {
   flex-wrap: wrap;
   text-shadow: 1px 1px 1px black;
   text-decoration: none;
-  color: black;
-
+  color: rgb(0, 0, 0);
+  letter-spacing: 2px;
 }
 
 .event-card:link {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .tournament-name {
@@ -113,7 +110,8 @@ body {
   background-color: rgb(169, 194, 213);
   border-radius: 10px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-  color: black;
+  color: rgb(0, 0, 0);
+  letter-spacing: 2px;
   
 }
 
@@ -225,11 +223,11 @@ body {
   letter-spacing: .5px;
   /* font-size: 50px; */
   text-decoration: bold;
-
+  letter-spacing: 1px;
 }
 
 table {
-  font-family: Arial, sans-serif;
+  font-family: BebasNeue, sans-serif;
   border-collapse: collapse;
   width: 80%;
   margin: 0 auto;
@@ -237,6 +235,8 @@ table {
   margin-bottom: 30px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
   text-decoration: bold;
+  background-color: rgb(0, 0, 0,.5);
+  letter-spacing: 1px;
 }
 
 th {
@@ -338,12 +338,17 @@ td {
 
 .allCompetitionTitle{
   margin-top: 10%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  border: red;}
+  /* display: flex; */
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* width: 100%; */
+  border: red;
+  color: white;
+  font-family: 'BebasNeue';
+  text-align: center;
+  font-size: 3em;
+}
 
 .column-game{
   display: flex;
@@ -355,8 +360,14 @@ td {
 .competition{
   display: grid;
   grid-template-areas: none;
-  width: 80%;
+  /* width: 80%; */
   border: red;
+  color: white;
+  font-family: 'BebasNeue';
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: rgb(0, 0, 0, .6);
+  text-shadow: 1px 1px 1px black;
 }
 
 .image-team-game{
@@ -525,3 +536,7 @@ td {
   height: 2.5em;
   width: 15em;
 }
+
+/* /==================================================/
+TeamPreviousGame.js /
+/==================================================/ */
