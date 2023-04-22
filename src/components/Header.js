@@ -29,14 +29,14 @@ const Header = () => {
 
         <LinkStyled to="/soccer">Soccer</LinkStyled>
         <LinkStyled to="/basketball">Basketball</LinkStyled>
-        <SearchContainer>
+        {/* <SearchContainer>
           <SearchIcon />
           <SearchInput
             type="text"
             placeholder="Search for your team"
             id="myInput"
           />
-        </SearchContainer>
+        </SearchContainer> */}
 
         <ButtonsContainer>
           <Link to='/signin'>

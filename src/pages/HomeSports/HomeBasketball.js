@@ -2,6 +2,13 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { FaSearch } from "react-icons/fa";
+import {
+  SearchBarContainer,
+ 
+  SearchInput,
+  LinkHomeStyled,
+
+} from "../../styles/SearchBarStyle.js";
 
 function HomeBasketball() {
   const [dataSport, setDataSport] = useState([]);
@@ -43,6 +50,17 @@ function HomeBasketball() {
     color: black;
   `;
 
+  //Add the search bar
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const filteredData = dataSport.filter((sport) =>
+  sport.NAME.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
 
   if (!Array.isArray(dataSport)) {
     return <div>Error: Data is not an array</div>;
@@ -54,7 +72,14 @@ function HomeBasketball() {
       <h1 className="title">Basketball Live Events</h1>
       <br />
       <div className="events-container">
-        {dataSport.map((sport, index) => (
+       <SearchBarContainer>     
+      <SearchInput
+        type="text"
+        placeholder="Search..."
+        value={searchTerm}
+        onChange={handleSearchChange}
+      />
+        {filteredData.map((sport, index) => (
           <div className="event-card" key={index}>
             <h1 className="tournament-name">
               <img
@@ -120,6 +145,7 @@ function HomeBasketball() {
             })}
           </div>
         ))}
+      </SearchBarContainer>
       </div>
     </div>
   );
