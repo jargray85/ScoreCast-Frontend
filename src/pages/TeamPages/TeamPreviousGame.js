@@ -52,7 +52,6 @@ const TeamPreviousGame = () => {
             team.EVENTS.map((event, eventIndex) => (
               <div className="event-game" key={eventIndex}>
                 <div className="column-game">
-                  {""}
                   <img
                     className="image-team-game"
                     src={event.HOME_IMAGES}
