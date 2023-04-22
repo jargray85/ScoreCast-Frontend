@@ -1,81 +1,70 @@
-# ScoreCast
+# Getting Started with Create React App
 
-#### A full React web app designed to display Basketball and Soccer games and scores. 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Description
-The goal of this app is to display scores and information about Basketball and Soccer games and players. 
+## Available Scripts
 
-## Table of Contents
-* [Technologies Used](#technologiesused)
-* [Features](#features)
-* [Design](#design)
-* [User Stories](#userstories)
-* [Wire Frames](#wireframes)
-* [Project Next Steps](#nextsteps)
-* [Deployed App](#deployment)
-* [About the Author](#author)
+In the project directory, you can run:
 
-## <a name="technologiesused"></a>Technologies Used
-* JavaScript
-* HTML
-* CSS
-* React
-* Node.js
-* MongoDB
-* Express.js
-* Mongoose
-* RESTful Routes
+### `npm start`
 
-## Features
-*   This is built with JavaScript, Node.js, Express.js, React
-*   The data is hosted on MongoDB
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## <a name="design"></a>Design
-* Design elements implemented using CSS
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## <a name="userstories"></a>User Stories
-* A user is able to go to the homepage and pick between viewing Basketball or Soccer
-* Then once a users selects their sports, they are taken to the list of current games for that sport. They can scroll down and see all the games 
-* This pages displays current games, the score of the game, the quarter/half of the game, the logos of the teams and the league. 
-* A user can then click on each different game and they are taken to the specific game page
-* A user then has the ability to click "Previous Games" for each team and they are taken to that team's previous games
-* They are able to scroll and see all the previous games for that team 
+### `npm test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## <a name="wireframes"></a>Wire Frames
-For the homepage, we want to display the following: 
-* Different sports
-* The scores of current games of those sports 
+### `npm run build`
 
-![homepage](https://user-images.githubusercontent.com/93359833/233504570-a9278d71-4fde-4513-a482-7dbd1908e055.jpeg)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Then on the specific sport pages, we want to display:
-* The scores of current games
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-![index](https://user-images.githubusercontent.com/93359833/233504612-47e3600a-cbb7-4e8e-9fea-99add5ebb737.jpeg)
+### `npm run eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## <a name="nextsteps"></a>Project Next Steps
-* Adding the ability for users to like/favorite their favorite teams or players 
-* Adding the weather of the location of the arena 
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Learn More
 
-## <a name="deployment"></a>Deployed Link
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-* You can view the repository:
-Combined repos: [Github.com](https://github.com/jargray85/ScoreCast)
-Frontend Repo: [Github.com](https://github.com/jargray85/ScoreCast-Frontend)
-Backend Repo: [Github.com](https://github.com/jargray85/Scorecast-backend)
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Deployed frontend: https://scorecast.netlify.app/
-Deployed backend: 
-    
-## Works Cited:
-* N/A
+### Code Splitting
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## <a name="author"></a>Authors
-Eleanor Brow, James Gray, Nick Kao, Thomas Avice  
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

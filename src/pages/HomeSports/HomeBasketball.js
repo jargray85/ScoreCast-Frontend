@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { FaSearch } from "react-icons/fa";
 
-// basketball //
 function HomeBasketball() {
   const [dataSport, setDataSport] = useState([]);
 
