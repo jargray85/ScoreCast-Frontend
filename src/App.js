@@ -5,6 +5,7 @@ import './App.css';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import {Route, Routes} from 'react-router-dom';
+import HeaderSignIn from './components/HeaderSignIn.js';
 
 //Import Pages
 import Home from './pages/Home.js';
