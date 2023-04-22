@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import {
+  SearchBarContainer,
+ 
+  SearchInput,
+  LinkHomeStyled,
+
+} from "../../styles/SearchBarStyle.js";
 
 
 function HomeSoccer() {
@@ -42,6 +49,19 @@ function HomeSoccer() {
     text-decoration: none;
   `;
 
+  //Add the search bar
+
+  //Add the search bar
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const filteredData = dataSport.filter((sport) =>
+  sport.NAME.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   if (!Array.isArray(dataSport)) {
     return <div>Error: Data is not an array</div>;
   }
@@ -50,7 +70,14 @@ function HomeSoccer() {
       <h1 className="title">Soccer Live Events</h1>
       <br />
       <div className="events-container">
-        {dataSport.map((sport, index) => (
+      <SearchBarContainer>     
+      <SearchInput
+        type="text"
+        placeholder="Search..."
+        value={searchTerm}
+        onChange={handleSearchChange}
+      />
+        {filteredData.map((sport, index) => (
           <div className="event-card" key={index}>
             <h1 className="tournament-name">
               <img
@@ -115,6 +142,7 @@ function HomeSoccer() {
             })}
           </div>
         ))}
+      </SearchBarContainer>
       </div>
     </div>
   );

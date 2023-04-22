@@ -34,22 +34,22 @@ import  useToken  from './components/useTokens.js';
 function App() {
   const URL = "https://scorecast-scores.herokuapp.com/";
 
-  const { token, setToken } = useToken();
+  // const { token, setToken } = useToken();
 
-  if (!token) { //if token is not set, then show the sign in page
-    return (
-      <div >
-        <HeaderSignIn />
+  // if (!token) { //if token is not set, then show the sign in page
+  //   return (
+  //     <div >
+  //       <HeaderSignIn />
         
-        <Routes>
-        <Route path="/" element={<SignIn setToken={setToken} />} />
-        <Route path="/register" element={<Register setToken={setToken} />} />
-        </Routes>
+  //       <Routes>
+  //       <Route path="/" element={<SignIn setToken={setToken} />} />
+  //       <Route path="/register" element={<Register setToken={setToken} />} />
+  //       </Routes>
 
-        <Footer />
-      </div>
-    );
-  }
+  //       <Footer />
+  //     </div>
+  //   );
+  // }
 
   return (
     <div className="App">
