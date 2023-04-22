@@ -1,26 +1,76 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, Navigate } from "react-router-dom";
+import PropTypes from "prop-types";
 import styled from "styled-components";
-import { FooterWrapper, LinkStyled } from "../styles/FooterStyle.js";
 
-// Sign in //
-const SignIn = () => {
-  const LinkHomeStyled = styled(Link)`
-    text-decoration: none;
-    color: black; ;
-  `;
+const SignIn = ({ setToken, URL }) => {
+  SignIn.propTypes = {
+    // this is where you define your props
+    setToken: PropTypes.func.isRequired, // setToken is a function that is required
+  };
+
+  //
+  async function loginUser(credentials) {
+    console.log(credentials)
+    return fetch('http://localhost:4000/login', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(credentials),
+      
+    }).then((data) => data.json());
+  }
+
+ 
+
+  //
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+
+  //
+  const handleSubmit = async (e) => {
+    //console.log(e);
+    e.preventDefault();
+    try {
+      const token = await loginUser({
+        email,
+        password,
+      });
+      setToken(token);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  //verification
+  console.log(email);
+  console.log(password);
 
   return (
-    <div className="signin-container">
-      <h1>Sign-In</h1>
-      <form>
-        <label>Username:</label> <br></br>
-        <input type="text" name="username" placeholder="username" /> <br></br>
-        <label for="password">Password:</label> <br></br>
-        <input type="password" name="password" placeholder="password" /> <br></br>
-        <button>Sign-In</button>
+    <div className="parent-container-register">
+      <h1 className="title-register">Welcome Back! Please Sign In</h1>
+      <h2 className="title-register-h2">
+        If you do not have an account, please register {" "}
+        <Link to="/register"> here</Link>
+      </h2>
+      <form className="form-register" onSubmit={handleSubmit}>
+        <label>email:</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="email"
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <label>Password:</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="password"
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button type="submit" className="button-register">Sign In</button>
       </form>
- 
     </div>
   );
 };
