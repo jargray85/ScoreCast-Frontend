@@ -44,12 +44,12 @@ function Register({ setToken }) {
     <div className="parent-container-register">
       <h1 className="title-register">Register</h1>
       <form onSubmit={handleSubmit} className="form-register">
-        <label>Username:</label>
-        <input type="text" name="username" placeholder="Username" onChange={e=> setUsername(e.target.value)} />
-        <label>Email:</label>
-        <input type="email"  name="email" placeholder="Email" onChange={e=> setEmail(e.target.value)} />
-        <label for="password">Password:</label>
-        <input type="password" name="password" placeholder="password" onChange={e=> setPassword(e.target.value)}  />
+        <label className='username-register'>Username</label> <br></br>
+        <input type="text" name="username" placeholder="Username" onChange={e=> setUsername(e.target.value)} /> <br></br> <br></br>
+        <label className='email-register'>Email</label> <br></br>
+        <input type="email"  name="email" placeholder="Email" onChange={e=> setEmail(e.target.value)} /> <br></br> <br></br>
+        <label for="password" className='password-register'>Password</label> <br></br>
+        <input type="password" name="password" placeholder="password" onChange={e=> setPassword(e.target.value)}  /> <br></br> <br></br>
         <button className="button-register">Register</button>
       </form>
     </div>

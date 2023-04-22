@@ -498,40 +498,46 @@ td {
 /*==================================================*/
 /* Register.js */
 /*==================================================*/
-.register-container {
-  margin-top: 5em;
+.parent-container-register {
+  margin-top: 7em;
   color: white;
 }
 
-.register-container h1 {
+.title-register {
   text-align: center;
   font-family: 'BebasNeue';
   font-size: 4em;
 }
 
-.register-container form {
+.form-register {
   text-align: center;
 }
 
-.register-container .username {
+.username-register {
   font-family: 'BebasNeue';
   font-size: 2em;
   margin-bottom: 1em;
 }
 
-.register-container .password {
+.email-register {
+  font-family: 'BebasNeue';
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.password-register {
   font-family: 'BebasNeue';
   font-size: 2em;
   margin-top: 2em;
 }
 
-.register-container .submit {
+.button-register {
   margin-top: 1.5em;
   height: 3em;
   width: 8em;
 }
 
-.register-container input {
+input {
   height: 2.5em;
   width: 15em;
 }
@@ -540,7 +546,7 @@ td {
 /* SignIn.js */
 /*==================================================*/
 .signin-container {
-  margin-top: 5em;
+  margin-top: 7em;
   color: white;
 }
 
@@ -550,8 +556,18 @@ td {
   font-size: 4em;
 }
 
+.signin-container h2 {
+  text-align: center;
+  font-family: 'BebasNeue';
+  font-size: 2em;
+}
+
 .signin-container form {
   text-align: center;
+}
+
+.signin-container link {
+  text-decoration: none;
 }
 
 .signin-container label {

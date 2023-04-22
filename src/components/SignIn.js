@@ -48,27 +48,27 @@ const SignIn = ({ setToken, URL }) => {
   console.log(password);
 
   return (
-    <div className="parent-container-register">
-      <h1 className="title-register">Welcome Back! Please Sign In</h1>
-      <h2 className="title-register-h2">
+    <div className="signin-container">
+      <h1 className="title-signin">Welcome Back! Please Sign In</h1>
+      <h2 className="title-signin-h2">
         If you do not have an account, please register {" "}
         <Link to="/register"> here</Link>
       </h2>
       <form className="form-register" onSubmit={handleSubmit}>
-        <label>email:</label>
+        <label>email</label> <br></br>
         <input
           type="text"
           name="name"
           placeholder="email"
           onChange={(e) => setEmail(e.target.value)}
-        />
-        <label>Password:</label>
+        /> <br></br> <br></br>
+        <label>Password</label> <br></br>
         <input
           type="password"
           name="password"
           placeholder="password"
           onChange={(e) => setPassword(e.target.value)}
-        />
+        /> <br></br> <br></br>
         <button type="submit" className="button-register">Sign In</button>
       </form>
     </div>

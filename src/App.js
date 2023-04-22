@@ -39,11 +39,14 @@ function App() {
   if (!token) { //if token is not set, then show the sign in page
     return (
       <div >
-        <HeaderSignIn />
+        <Header />
         
         <Routes>
-        <Route path="/" element={<SignIn setToken={setToken} />} />
+        <Route path="/signin" element={<SignIn setToken={setToken} />} />
         <Route path="/register" element={<Register setToken={setToken} />} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/soccer" element={<HomeSoccer/>} />
+        <Route path="/basketball" element={<HomeBasketball/>} />
         </Routes>
 
         <Footer />
